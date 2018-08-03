@@ -12,7 +12,7 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
 ## Quick Example
 
     
-
+*********
 
 ## Supported platforms
 
@@ -26,4 +26,4 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
 
 ## License
 
-Cordova PhoneCall Trap is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Cordova PhoneCall receiver is released under the [MIT License](http://www.opensource.org/licenses/MIT).
