@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahmedb49/ionic-adc-call-receiver"
+    "url": "git+https://github.com/ahmedb49/io.adc.plugin.callreceiver"
   },
   "keywords": [
     "phonegap",
@@ -27,7 +27,7 @@
   "author": "Ahmed CHTARA",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ahmedb49/ionic-adc-call-receiver/issues"
+    "url": https://github.com/ahmedb49/io.adc.plugin.callreceiver/issues"
   },
-  "homepage": "https://github.com/ahmedb49/ionic-adc-call-receiver#readme"
+  "homepage": "https://github.com/ahmedb49/io.adc.plugin.callreceiver#readme"
 }
