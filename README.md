@@ -1,4 +1,4 @@
-Cordova PhoneCall Trap
+Cordova PhoneCall Receiver
 =======================
 
 It is a Apache Cordova plugin to simplify handling phone call status and events in Android devices.
