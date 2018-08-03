@@ -1,10 +1,11 @@
-package io.gvox.phonecalltrap;
+package io.adc.adccallreceiver;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
 import android.content.Context;
-import android.telephony.PhoneStateListener;
+import android.content.BroadcastReceiver;
+import android.content.Intent;
 import android.telephony.TelephonyManager;
 
 import org.json.JSONException;
@@ -23,10 +24,7 @@ public class AdcCallReceiver extends CordovaPlugin {
 
         return true;
     }
-
-}
-
-public static class CallReceiver extends BroadcastReceiver {
+ static class CallReceiver extends BroadcastReceiver {
 
     private CallbackContext callbackContext;
 
@@ -58,3 +56,6 @@ public static class CallReceiver extends BroadcastReceiver {
         
     
 }
+}
+
+

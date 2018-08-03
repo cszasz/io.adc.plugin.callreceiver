@@ -1,9 +1,9 @@
 {
-  "name": "ionic-adc-call-receiver",
-  "version": "0.0.1",
+  "name": "io.adc.plugin.callreceiver",
+  "version": "0.1.2",
   "description": "A phone call receiver",
   "cordova": {
-    "id": "ionic-adc-call-receiver",
+    "id": "io.adc.plugin.callreceiver",
     "platforms": [
       "android"
     ]

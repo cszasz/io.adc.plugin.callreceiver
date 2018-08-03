@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="ionic-adc-call-receiver"
+           id="io.adc.plugin.callreceiver"
       version="0.0.1">
     <name>AdcCallReceiver</name>
     <description>A phone call A phone call receiver</description>
@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdcCallReceiver">
-                <param name="android-package" value="ionic-adc-call-receiver.AdcCallReceiver" />
+                <param name="android-package" value="io.adc.callreceiver.AdcCallReceiver" />
             </feature>
         </config-file>
 
@@ -32,6 +32,6 @@
         </receiver>
         </config-file>
 
-        <source-file src="src/android/AdcCallReceiver.java" target-dir="src/adc/AdcCallReceiver" />
+        <source-file src="src/android/AdcCallReceiver.java" target-dir="src/io/adc/adccallreceiver" />
      </platform>
 </plugin>
