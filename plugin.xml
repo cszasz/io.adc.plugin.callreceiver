@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="ionic-adc-call-receiver"
+      version="0.0.1">
+    <name>AdcCallReceiver</name>
+    <description>A phone call A phone call receiver</description>
+    <license>MIT</license>
+    <keywords>phonegap, phone, receiveCall,ringing, call</keywords>
+
+
+    <js-module src="www/AdcCallReceiver.js" name="AdcCallReceiver">
+        <clobbers target="window.AdcCallReceiver" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AdcCallReceiver">
+                <param name="android-package" value="ionic-adc-call-receiver.AdcCallReceiver" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			<receiver android:name=".AdcCallReceiver$CallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        </config-file>
+
+        <source-file src="src/android/AdcCallReceiver.java" target-dir="src/adc/AdcCallReceiver" />
+     </platform>
+</plugin>

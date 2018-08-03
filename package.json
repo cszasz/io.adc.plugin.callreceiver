@@ -1,0 +1,33 @@
+{
+  "name": "ionic-adc-call-receiver",
+  "version": "0.0.1",
+  "description": "A phone call receiver",
+  "cordova": {
+    "id": "ionic-adc-call-receiver",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "phonegap",
+    "calendar",
+    "phone",
+    "call",
+    "phone-call",
+    "ringing",
+    "phone-state",
+    "call-state",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ahmed CHTARA",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
