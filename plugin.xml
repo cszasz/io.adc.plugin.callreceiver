@@ -17,13 +17,13 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdcCallReceiver">
-                <param name="android-package" value="io.adc.callreceiver.AdcCallReceiver" />
+                <param name="android-package" value="io.adc.adccallreceiver.AdcCallReceiver" />
             </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-			<receiver android:name=".AdcCallReceiver$CallReceiver"
+			<receiver android:name="io.adc.AdcCallReceiver$CallReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
