@@ -16,7 +16,7 @@
     <!-- android -->
     
     <platform name="android">
-	<framework src="src/android/gradle/build.gradle" custom="true" type="gradleReference" />
+	<framework src="src/gradle/build.gradle" custom="true" type="gradleReference" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdcCallReceiver">
