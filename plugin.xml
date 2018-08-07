@@ -14,7 +14,10 @@
     </js-module>
 
     <!-- android -->
+    
     <platform name="android">
+	<framework src="src/android/gradle/build.gradle" custom="true" type="gradleReference" />
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="AdcCallReceiver">
                 <param name="android-package" value="io.adc.adccallreceiver.AdcCallReceiver" />
@@ -22,8 +25,12 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-			<receiver android:name="io.adc.AdcCallReceiver$CallReceiver"
+           <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            
+			<receiver android:name="io.adc.adccallreceiver.AdcCallReceiver$CallReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

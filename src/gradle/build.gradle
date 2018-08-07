@@ -1,0 +1,11 @@
+
+repositories {
+    maven {
+        url "http://maven.google.com/"
+    }
+}
+dependencies {
+    
+    compile 'com.google.code.gson:gson:2.7'
+    
+}

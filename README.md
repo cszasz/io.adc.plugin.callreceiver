@@ -16,7 +16,7 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
 
 ## Supported platforms
 
-- Android 2.3.3 or higher
+- ONLY Android
 
 
 ## References
@@ -26,4 +26,4 @@ It is a Apache Cordova plugin to simplify handling phone call status and events 
 
 ## License
 
-Cordova PhoneCall receiver is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Cordova PhoneCall receiver is not released yet

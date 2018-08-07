@@ -1,6 +1,6 @@
 {
   "name": "io.adc.plugin.callreceiver",
-  "version": "0.1.2",
+  "version": "0.0.1",
   "description": "A phone call receiver",
   "cordova": {
     "id": "io.adc.plugin.callreceiver",
