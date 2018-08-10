@@ -1,7 +1,7 @@
 Cordova AdcCallReceiver
 =======================
 
-	It is a Apache Cordova plugin (COMPATIBLE WITH IONIC) to simplify handling phone call status and events in Android devices.
+It is an Apache Cordova plugin (COMPATIBLE WITH IONIC) to simplify handling phone call status and events in Android devices.
 
 
 ## Install
