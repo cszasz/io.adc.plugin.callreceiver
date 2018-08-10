@@ -50,8 +50,8 @@ It is also possible to install via repo url directly:
 *********
 
 ## References
-	Cordova PhoneCall Trap : worked with PhoneStateListener
-	https://github.com/renanoliveira/cordova-phone-call-trap
+Cordova PhoneCall Trap : worked with PhoneStateListener
+https://github.com/renanoliveira/cordova-phone-call-trap
 
 	AdcCallReceiver worked with BroadcastReceiver
 ********
