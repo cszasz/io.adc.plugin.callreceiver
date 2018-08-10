@@ -7,7 +7,8 @@ It is an Apache Cordova plugin (COMPATIBLE WITH IONIC) to simplify handling phon
 ## Install
 	cordova plugin add io.adc.plugin.callreceiver
 
-It is also possible to install via repo url directly :
+It is also possible to install via repo url directly:
+
 	cordova plugin add https://github.com/ahmedb49/io.adc.plugin.callreceiver
     
 ******
