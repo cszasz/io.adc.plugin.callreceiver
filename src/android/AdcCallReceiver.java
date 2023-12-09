@@ -58,23 +58,23 @@ public class AdcCallReceiver extends CordovaPlugin {
             else if(intent.getStringExtra(TelephonyManager.EXTRA_STATE).equals(TelephonyManager.EXTRA_STATE_IDLE)){
                 msg="IDLE";
 				sendResult(msg, intent);
-            } else {
-                sendResult("x", intent);
             }
-
-
             
             
         }
 
 		public void sendResult(String msg, Intent intent){
-            if (intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER)!=null) {
-                PluginResult result = new PluginResult(PluginResult.Status.OK, "{ state: \"" + msg + "\", number:\"" + intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER) + "\"}");
-                result.setKeepCallback(true);
+            try {
+                if (intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER) != null) {
+                    PluginResult result = new PluginResult(PluginResult.Status.OK, "{ \"state\": \"" + msg + "\", \"number\":\"" + intent.getExtras().getString(TelephonyManager.EXTRA_INCOMING_NUMBER) + "\"}");
+                    result.setKeepCallback(true);
 
-                if (AdcCallReceiver.cbc != null) {
-                    AdcCallReceiver.cbc.sendPluginResult(result);
+                    if (AdcCallReceiver.cbc != null) {
+                        AdcCallReceiver.cbc.sendPluginResult(result);
+                    }
                 }
+            } catch (Exception ex) {
+                ex.printStackTrace();
             }
             
         } 
@@ -84,6 +84,3 @@ public class AdcCallReceiver extends CordovaPlugin {
 
 }   
    
-
-
-
